@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+    <form>
+        <h1>Calculadora</h1>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="valor1">1.o Número</label>
+                <input type="number" id="valor1">
+            </div>
+
+            <div class="campo">
+                <label for="valor2">2.o Número</label>
+                <input type="number" id="valor2">
+            </div>
+        
+
+        <fieldset class="formulas">
+            <div id="formula">
+            <input type="button" value="Soma" id="soma" onclick="somar()">
+            
+            <input type="button" value="Subtração" id="sub" onclick="subtrair()">
+            
+            <input type="button" value="Divisão" id="div" onclick="dividir()">
+           
+            <input type="button" value="Multiplicação" id="mult" onclick="multiplicar()">
+            </div>
+        </fieldset>
+            
+    
+        
+
+        <div id="res">
+            resposta
+        </div>
+    </fieldset>
+
+    <input type="submit" value="Limpar">
+    </form>
+    <script src="calculadora.js"></script>
+</body>
+</html>
